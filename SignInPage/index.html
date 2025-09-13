@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up DRP2 Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/LogoFor.jpg">
+
+
+
+</head>
+
+<body>
+    <section class="h-[100vh] w-[100vw] bg-gray-300   backdrop-opacity-[100] justify-items-center content-center">
+        <div id="signUpMain" class="md:w-[50%]  2xl:w-[25%] xl:w-[30%] lg:w-[32%] sm:w-[65%] w-[40vh] bg-[#224432] px-[2vw] py-[3vh] relative ">
+            <form action="Home.html" method="get">
+                <fieldset>
+                    <legend class="text-[#11dd11] text-[1.5em] text-center ">Sign In / Login</legend>
+                    <label for="Uemail" class="text-[#dfdfdf] font-thin ">User Email Address :</label><br>
+                    <input type="Email" id="Uemail" placeholder="exmple@gmail.com" pattern=" [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]"
+                        class="h-[5vh] w-[100%] rounded-[2px] my-[1vh] outline-none p-[1vh]">
+                    <h1 class="text-center text-[#fff] mx-[0.5vh] text-20">or</h1>
+                    <label for="Unumber" class="text-[#dfdfdf] font-thin ">User Mobile Number:</label><br>
+                    <input type="tel" id="Unumber" placeholder="+91-1800-500-321"   pattern="[0-9]{10}" title="Please enter a 10-digit mobile number"  maxlength="10" minlength="10"
+                        class="h-[5vh] w-[100%] rounded-[2px] my-[1vh] outline-none p-[1vh]">
+                      <label for="UPassword" class="text-[#dfdfdf] font-thin ">User Password:</label><br>
+                    <input type="password" id="UPassword" placeholder="Enter a Password ,Like - Pass@123"  pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z0-9@$!%*?&]{6,16}$"  minlength="6"
+                        class="h-[5vh] w-[100%] rounded-[2px] my-[1vh] outline-none p-[1vh]">
+                        <button   class="text-white bg-[#3db941] w-full py-[1vh] my-[1.1vh] justify-self-center   hover:text-[#000]">Sign In (Login)</button>
+                        <span class="flex justify-between text-[#11dd11] my-[2vh]"> 
+                            <a href="">Resister new User</a>
+                            <a href="">Forget Password ?</a>
+                        </span>
+                </fieldset>
+            </form>
+            <span type="button"><img src="./img/Close Button.png" alt="btn" class="h-[4vh] absolute top-[2vh] right-[2vw] hover:scale-[1.1] cursor-pointer"></span>
+
+        </div>
+    </section>
+</body>
+<script src="./app.js"></script>
+</html>
